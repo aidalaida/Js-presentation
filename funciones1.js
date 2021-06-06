@@ -1,3 +1,4 @@
+
 let botones=document.querySelectorAll(".boton")
 
 for (let i=0; i < botones.length; i++) {
@@ -10,3 +11,9 @@ for (let i=0; i < botones.length; i++) {
         parrafo.innerHTML = `${origen} dice ${entrada.value}!!!`
     })
 }
+
+document.querySelector("#btn-borrar")
+    .addEventListener("click", () => { 
+        elementoBorrable = document.querySelector("p")
+        elementoBorrable.remove(parrafo)
+    })
